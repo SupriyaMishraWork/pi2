@@ -1,5 +1,5 @@
-obj-m += rpi2_final.o
-rpi_driver-objs := rpi2_final.o
+obj-m += pi2.o
+rpi_driver-objs := pi2.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
